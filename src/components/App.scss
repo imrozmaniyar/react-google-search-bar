@@ -1,0 +1,62 @@
+/**********************************Home page *******************8
+888888888888*/
+.header {
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    color: #000;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  li a:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer {
+  background-color: #eeeeee;
+  position: absolute;
+  bottom: 0;
+  margin-top: 70px;
+  height: 66px;
+  width: 100%;
+  font-size: 13px;
+  font-family: 'arial';
+  color: #555555;
+}
+
+#footermenu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  margin-left: 135px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+#footermenu li {
+  padding-right: 30px;
+}
+
+#footerlocation {
+  display: flex;
+  direction: row;
+  margin-left: 175px;
+  position: relative;
+  top: -5px;
+}
+
+#footerlocation p:nth-of-type(1) {
+  font-weight: bold;
+}
