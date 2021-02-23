@@ -5,6 +5,8 @@ import _ from 'lodash';
 import { fetchData } from '../../services/movies';
 import ResultListComponent from '../ResultList';
 
+import style from './index.scss';
+
 const SearchBarComponent = () => {
   const appDispatch = useContext(DispatchContext);
   const appState = useContext(StateContext);
@@ -79,8 +81,8 @@ const SearchBarComponent = () => {
         />
         <a href="#">
           <img
+            alt="Google Mic"
             className="voice"
-            alt="Google mic"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png"
           />
         </a>
