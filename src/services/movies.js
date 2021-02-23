@@ -10,7 +10,7 @@ export const fetchData = async keyword => {
     // save the new request for cancellation
     tokenSource = axios.CancelToken.source();
 
-    const { data } = await axios.get(`http://www.omdbapi.com/?apikey=8f2b299d&s=${keyword}`, {
+    const { data } = await axios.get(`https://www.omdbapi.com/?apikey=8f2b299d&s=${keyword}`, {
       cancelToken: tokenSource.token
     });
     console.log(data);

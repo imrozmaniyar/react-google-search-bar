@@ -1,11 +1,9 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import DispatchContext from '../context/DispatchContext';
 import StateContext from '../context/StateContext';
 import _ from 'lodash';
 import { fetchData } from '../../services/movies';
 import ResultListComponent from '../ResultList';
-
-import style from './index.scss';
 
 const SearchBarComponent = () => {
   const appDispatch = useContext(DispatchContext);
@@ -82,6 +80,7 @@ const SearchBarComponent = () => {
         <a href="#">
           <img
             className="voice"
+            alt="Google mic"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png"
           />
         </a>

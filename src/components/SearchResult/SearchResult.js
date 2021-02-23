@@ -17,7 +17,6 @@ function SearchResult() {
   const [searchQuery, setSearchQuery] = useState({});
   const [dataList, setDataList] = useState([]);
   const [errorMssg, setErrorMssg] = useState('');
-  const [pageList, setPageList] = useState([]);
 
   /**
    * This will be called every time there is
@@ -79,6 +78,7 @@ function SearchResult() {
           >
             <img
               id="searchbarimage"
+              alt="Logo"
               src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
             />
           </Link>
@@ -98,6 +98,7 @@ function SearchResult() {
             <a href="#">
               <img
                 className="voice"
+                alt="Google Mic"
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/716px-Google_mic.svg.png"
               />
             </a>
@@ -131,7 +132,7 @@ function SearchResult() {
         {appState.query.map((elem, index) => (
           <div className="searchresult" key={index}>
             <h2>{elem.Title}</h2>
-            <a>{elem.Poster}</a> <button>▼</button>
+            <span>{elem.Poster}</span> <button>▼</button>
             <p>
               Year: {elem.Year} -- Type: {elem.Type}
             </p>
